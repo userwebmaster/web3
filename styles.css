@@ -6,6 +6,7 @@
     background-size: cover;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow: hidden;
    }
 @font-face {
     font-family: 'Lovelo';
