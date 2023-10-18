@@ -22,10 +22,10 @@ mark{
 body{
     padding: 0px;
     margin: 0px;
-    height: 1465vh;
+    height: 1265vh;
     display: grid;  
     grid-template-columns: 1fr;
-    grid-template-rows: 0.08fr 0.92fr 1fr 2.5fr 0.5fr 1.8fr 1.9fr 3fr  /*1fr*/ 0.25fr 2.2fr 0.5fr;
+    grid-template-rows: 0.08fr 0.92fr 0.9fr 2.5fr 0.5fr 1.3fr 1.4fr 1.9fr  /*1fr*/ 0.45fr 2.2fr 0.5fr;
     grid-template-areas: 
     "header"
     "video"
@@ -137,10 +137,10 @@ h1{
 }
 #obsah{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0% 5%;
+    padding: 0% 10%;
     grid-area: obsah;
 }
 .text-container{
@@ -421,6 +421,9 @@ button:hover{
 #vysledky2 button{
     height: 3%;
     width: 30%;
+    text-align: center;
+    padding: 1% 1%;
+    margin: auto;
     background-color: var(--golden);
     color: black;
 }
