@@ -265,6 +265,7 @@ button:hover{
     justify-content: center;
     padding: 0% 10%;
     grid-area: text1;
+    background-color: #3D2760;
 }
 #text1 .text-container {
     height: 55%;
