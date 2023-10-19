@@ -292,6 +292,7 @@ button:hover{
     background-size: contain;
     overflow: hidden;
     background-image: url(images/text1-img.png);
+    background-color: #B192C1;
 }
 #text2{
     display: flex;
