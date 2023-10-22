@@ -486,8 +486,20 @@ button:hover{
 #vysledky2 .vysledky-container{
     height: 90%;
 }
+#vysledky2 .vysledky-image1{
+    background-size: 110%;
+    background-image: url(images/vysledky-img4.png);
+}
+#vysledky2 .vysledky-image2{
+    background-size: 110%;
+    background-image: url(images/vysledky-img5.png);
+}
+#vysledky2 .vysledky-image3{
+    background-size: 110%;
+    background-image: url(images/vysledky-img6.png);
+}
 #vysledky2 h2{
-    font-size: 1.5rem;
+    font-size: 6cqi;
 }
 #vysledky2 button{
     height: 3%;
