@@ -88,7 +88,7 @@ header{
     opacity: 0;
     transition: all .3s;
 }
-.collapsible--expanded > .menu-container{
+.collapsible0--expanded > .menu-container{
     max-height: 100vh;
     opacity: 1;
 }
@@ -412,8 +412,8 @@ button:hover{
 }
 .question{
     width: 100%;
-    height: 7%;
-    padding: 0% 2%;
+    height: auto;
+    padding: 10% 5%;
     display: flex;
     flex-direction: column;
     align-items: left;

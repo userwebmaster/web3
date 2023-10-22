@@ -1,11 +1,11 @@
 function toggleCollapsible(collapsibles) {
     collapsibles.forEach((item) =>
        item.addEventListener("click", function () {
-         this.classList.toggle("collapsible--expanded");
+         this.classList.toggle("collapsible0--expanded");
        })
     );
    }
    
   
-  const collapsibles = [...document.getElementsByClassName("collapsible")];
+  const collapsibles = [...document.getElementsByClassName("collapsible0")];
   toggleCollapsible(collapsibles);
