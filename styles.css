@@ -77,12 +77,17 @@ header{
     background-repeat: no-repeat;
     background-position: center;
 }
+.collapsible--expanded > .menu-container{
+    max-height: 100vh;
+    opacity: 1;
+    }
 .menu-container{
     display: flex;
     flex-direction: row;
     position: absolute;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 .blackness{
     height: 100%;
@@ -112,13 +117,13 @@ header{
     background-image: url(images/x.png);
 }
 .menu-container .logo-text{
-    background-size: 100%;
+    background-size: cover;
     height: 6%;
     width: 100%;
 }
 .menu-container .btn1{
     padding: 5% 5%;
-    width: 50%;
+    width: 100%;
 }
 nav a{
     text-decoration: none;
