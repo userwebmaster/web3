@@ -22,10 +22,10 @@ mark{
 body{
     padding: 0;
     margin: 0;
-    height: 1175vh;
+    height: 1417vh;
     display: grid;  
     grid-template-columns: 1fr;
-    grid-template-rows: 0.09fr 0.91fr 0.9fr 2.5fr 0.5fr 1.4fr 1.4fr 0.7fr  /*1fr*/ 0.45fr 2.2fr 0.5fr;
+    grid-template-rows: 0.09fr 0.93fr 1.1fr 2.8fr 0.8fr 1.7fr 1.7fr 1fr  /*1fr*/ 0.75fr 2.5fr 0.8fr;
     grid-template-areas: 
     "header"
     "video"
@@ -277,7 +277,7 @@ button:hover{
     width: 80%;
     height: 88%;
 }
-.vysledky-image1, .vysledky-image3{
+.vysledky-image1, .vysledky-image2, .vysledky-image3{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -287,18 +287,11 @@ button:hover{
 .vysledky-image1{
     background-image: url(images/vysledky-img1.png);
 }
-.vysledky-image3{
-    width: 90%;
-    height: 33%;
-    background-image: url(images/vysledky-img3.png);
-}
 .vysledky-image2{
-    width: 90%;
-    height: 33%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     background-image: url(images/vysledky-img2.png);
+}
+.vysledky-image3{
+    background-image: url(images/vysledky-img3.png);
 }
 #ogrindsete{
     display: flex;
