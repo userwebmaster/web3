@@ -207,7 +207,7 @@ nav p:hover{
     height: 60%;
 }
 #obsah .image-container{
-    height: 40%;
+    max-height: 40%;
     width: 80%;
     background-size: contain;
     overflow: hidden;
@@ -245,14 +245,7 @@ button:hover{
     cursor: pointer;
     color: var(--golden);
 }
-.image-container{
-    width: 100%;
-    height: auto;
-    background-size: 60%;
-    background-image: url(images/grindset-logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 #vysledky1{
     display: flex;
