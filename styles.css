@@ -256,14 +256,20 @@ button:hover{
 
 #vysledky1{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    padding: 0% 5%;
-    gap: 2%;
     grid-area: vysledky1;
 }
 .vysledky-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    width: 100%;
+    height: 100%;
+}
+.images-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,12 +299,6 @@ button:hover{
     background-size: contain;
     background-position: center;
     background-image: url(images/vysledky-img2.png);
-}
-.images-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 #ogrindsete{
     display: flex;
