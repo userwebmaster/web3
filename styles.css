@@ -281,16 +281,22 @@ button:hover{
 }
 #ogrindsete{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: start;
-    padding: 5% 15%;
-    text-align: left;
-    gap: 15%;
-    line-height: 200%;
+    justify-content: center;
     grid-area: ogrindsete;
 }
-#ogrindsete h1 {
+.ogrindsete-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 90%;
+    width: 80%;
+    text-align: left;
+    gap: 5%;
+    line-height: 200%;
+}
+.ogrindsete-container h1 {
     font-size: 6cqi;
 }
 #ogrindsete p {
@@ -298,11 +304,17 @@ button:hover{
 }
 #text1{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: text1;
+}
+.text1-container{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0% 10%;
-    grid-area: text1;
+    height: 100%;
+    width: 80%;
 }
 #text1 .text-container {
     height: 55%;
@@ -310,7 +322,6 @@ button:hover{
     flex-direction: column;
     align-items: left;
     justify-content: start;
-    padding-top: 20%;
     gap: 1%;
 }
 #text1 .text-container h2{
@@ -330,6 +341,7 @@ button:hover{
     overflow: hidden;
     background-image: url(images/text1-img.png);
     box-sizing: border-box;
+    background-repeat: no-repeat;
 }
 #text2{
     display: flex;
