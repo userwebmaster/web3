@@ -413,7 +413,7 @@ button:hover{
 .question{
     width: 100%;
     height: auto;
-    padding: 10% 5%;
+    padding: 5% 5%;
     display: flex;
     flex-direction: column;
     align-items: left;
