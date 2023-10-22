@@ -384,9 +384,15 @@ button:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5% 15%;
-    padding-bottom: 0%;
     grid-area: faq;
+}
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 90%;
 }
 #faq h2{
     font-size: 200%;
