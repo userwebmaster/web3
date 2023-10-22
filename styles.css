@@ -77,17 +77,23 @@ header{
     background-repeat: no-repeat;
     background-position: center;
 }
-.collapsible--expanded > .menu-container{
-    max-height: 100vh;
-    opacity: 1;
-    }
 .menu-container{
+    bottom: 2%;
+    right: 4%;
+    left: 0;
     display: flex;
     flex-direction: row;
     position: absolute;
     height: 100%;
     width: 100%;
     overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+.collapsible--expanded > .menu-container{
+    max-height: 100vh;
+    opacity: 1;
 }
 .blackness{
     height: 100%;
