@@ -25,7 +25,7 @@ body{
     height: 1417vh;
     display: grid;  
     grid-template-columns: 1fr;
-    grid-template-rows: 0.09fr 0.93fr 1.1fr 2.8fr 0.8fr 1.7fr 1.7fr 1fr  /*1fr*/ 0.75fr 2.5fr 0.8fr;
+    grid-template-rows: 0.09fr 0.93fr 0.9fr 2.8fr 0.8fr 1.7fr 1.7fr 1fr  /*1fr*/ 0.75fr 2.5fr 0.8fr;
     grid-template-areas: 
     "header"
     "video"
@@ -345,11 +345,19 @@ button:hover{
 }
 #text2{
     display: flex;
+    align-items: center;
+    justify-content: start;
+    grid-area: text2;   
+    background-color: #3D2760;
+}
+.text2-container{
+    display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: start;
-    padding: 0% 10%;
-    grid-area: text2;   
+    height: 100%;
+    width: 80%;
+    background-color:#B192C1;
 }
 #text2 .text-container {
     height: 55%;
