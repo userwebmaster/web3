@@ -94,7 +94,7 @@ header{
 }
 .blackness{
     height: 100%;
-    width: 40%;
+    width: 30%;
     background-color: black;
     opacity: 50%;
 }
@@ -104,14 +104,14 @@ header{
     align-items: start;
     justify-content: left;
     height: 100%;
-    width: 60%;
+    width: 70%;
     gap: 6%;
-    padding: 5% 10%;
+    padding: 10% 10%;
     background-color: black;
 }
 .menu-container nav .x{
     position: absolute;
-    margin-left: 45%;
+    margin-left: 55%;
     width: 5%;
     height: 2.5%;
     background-size: 50%;
@@ -120,7 +120,8 @@ header{
     background-image: url(images/x.png);
 }
 .menu-container .logo-text{
-    background-size: cover;
+    background-size: 80%;
+    background-position: center;
     height: 6%;
     width: 100%;
 }
@@ -402,7 +403,6 @@ button:hover{
     align-items: center;
     justify-content: center;
     grid-area: faq;
-    background-color: #3D2760;
 }
 .faq-container{
     display: flex;
@@ -412,7 +412,6 @@ button:hover{
     width: 75%;
     height: 90%;
     gap: 2%;
-    background-color: #B192C1;
 }
 #faq h2{
     font-size: 6cqi;
@@ -446,9 +445,9 @@ button:hover{
     line-height: 150%;
 }
 #faq h3{
-    color: black;
+    color: white;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 4cqi;
 }
 #porozmyslaj{
     display: flex;
