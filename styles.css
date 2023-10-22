@@ -22,10 +22,10 @@ mark{
 body{
     padding: 0;
     margin: 0;
-    height: 1407vh;
+    height: 1447vh;
     display: grid;  
     grid-template-columns: 1fr;
-    grid-template-rows: 0.09fr 0.93fr 0.5fr 2.8fr 0.8fr 1.7fr 1.7fr 1.5fr  /*1fr*/ 0.75fr 2.5fr 0.8fr;
+    grid-template-rows: 0.09fr 0.93fr 0.5fr 2.8fr 0.8fr 1.7fr 1.7fr 1.9fr  /*1fr*/ 0.75fr 2.5fr 0.8fr;
     grid-template-areas: 
     "header"
     "video"
