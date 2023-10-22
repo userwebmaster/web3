@@ -77,15 +77,48 @@ header{
     background-repeat: no-repeat;
     background-position: center;
 }
-/* nav{
+.menu-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: right;
+    position: absolute;
     height: 100%;
-    width: 70%;
+    width: 100%;
+}
+.blackness{
+    height: 100%;
+    width: 40%;
+    background-color: black;
+    opacity: 50%;
+}
+ .menu-container nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    height: 100%;
+    width: 60%;
     gap: 6%;
-    padding-top: 3%;
+    padding: 5% 10%;
+    background-color: black;
+}
+.menu-container nav .x{
+    position: absolute;
+    margin-left: 45%;
+    width: 5%;
+    height: 2.5%;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(images/x.png);
+}
+.menu-container .logo-text{
+    background-size: 100%;
+    height: 6%;
+    width: 100%;
+}
+.menu-container .btn1{
+    padding: 5% 5%;
+    width: 50%;
 }
 nav a{
     text-decoration: none;
@@ -96,7 +129,7 @@ nav p{
 nav p:hover{
     color: var(--golden);
 }
-
+/*
 .vertical-line-container{
     height: 100%;
     padding-top: 3%;
@@ -112,9 +145,7 @@ nav p:hover{
     width: 5%;
     background-color: white;
 }
-
 */
-
 #video{
     display: flex;
     flex-direction: column;
@@ -291,6 +322,7 @@ button:hover{
     background-size: contain;
     overflow: hidden;
     background-image: url(images/text1-img.png);
+    box-sizing: border-box;
 }
 #text2{
     display: flex;
@@ -325,6 +357,7 @@ button:hover{
     background-size: contain;
     overflow: hidden;
     background-image: url(images/text2-img.png);
+    box-sizing: border-box;
 }
 #text3{
     display: flex;
