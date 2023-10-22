@@ -22,10 +22,10 @@ mark{
 body{
     padding: 0;
     margin: 0;
-    height: 1467vh;
+    height: 1512vh;
     display: grid;  
     grid-template-columns: 1fr;
-    grid-template-rows: 0.09fr 0.93fr 0.5fr 2.8fr 0.8fr 1.7fr 1.7fr 2.2fr  /*1fr*/ 0.75fr 2.5fr 0.8fr;
+    grid-template-rows: 0.09fr 0.93fr 0.5fr 2.8fr 0.8fr 1.7fr 1.7fr 2.5fr  /*1fr*/ 1fr 2.5fr 0.8fr;
     grid-template-areas: 
     "header"
     "video"
@@ -374,7 +374,7 @@ button:hover{
     line-height: 150%;
 }
 #text2 .btn2{
-    height: 6%;
+    height: 8%;
 }
 #text2 .image-container{
     height: 40%;
