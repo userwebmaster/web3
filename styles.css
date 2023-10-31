@@ -18,6 +18,8 @@ src: url(fonts/Lovelo\ Black.otf);
         height: 100px;
         }
     .navbar{
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -35,7 +37,7 @@ src: url(fonts/Lovelo\ Black.otf);
         justify-content: center;
         align-items: center;
         gap: 5%;
-        width: 50%;
+        width: 55%;
         padding-top: 3%;
     }
     .navbar-collapse{
@@ -76,6 +78,8 @@ src: url(fonts/Lovelo\ Black.otf);
         height: 80px;
         }
     .navbar{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
