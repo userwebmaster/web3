@@ -8,194 +8,7 @@
     <link href="styles.css" rel="stylesheet">
   </head>
   <style>
-    *{
-    justify-content: center;
-  }
-body{
-box-sizing: border-box;
-color: white;
-font-family: 'Lovelo';
-background-color: black;
-}
-@font-face {
-font-family: 'Lovelo';
-src: url(fonts/Lovelo\ Black.otf);
-}
-@media (min-width:992px){
-    .navbar{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .navbar-brand{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: start;
-        padding-left: 5%;
-        width: 25%;
-    }
-    .start-logo{
-        width: 35%;
-    }
-    .navbar-nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 5%;
-        width: 50%;
-        padding-top: 3%;
-    }
-}
-@media (max-width:992px){
-    .display-6{
-        font-size: 6cqi !important;
-    }
-    .fs-2{
-        font-size: 4cqi !important;
-    }
-    .fs-3{
-        font-size: 3.8cqi !important;
-    }
-    .fs-5{
-        font-size: 3cqi !important;
-    }
-    .fs-6{
-        font-size: 2.5cqi !important;
-    }
-    .fs-7{
-        font-size: 2cqi !important;
-    }
-    .btn-outline-gold{
-        font-size: 2.5cqi !important;
-        }
-    .p-10{
-        padding-left: 8%;
-        padding-right: 8%;
-    }
-    .display-none{
-        display: none;
-    }
-    .navbar{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .navbar-brand{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: end;
-        padding-left: 5%;
-    }
-    .start-logo{
-        width: 35%;
-    }
-    .navbar-nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-}
 
-
-.btn{
-    --bs-btn-padding-x: 0.9rem;
-    --bs-btn-padding-y: 0.6rem;
-}
-.btn-outline-gold{
-font-size: small;
-border-radius: 50px;
-border: 1.5px solid #b7985a;
-color: #b7985a;
-background-color: transparent;
-}
-.btn-outline-gold:hover{
-color: black;
-background-color: #b7985a;
-}
-:root{
---golden: #b7985a;
-}
-.logo{
-max-width: 90%;
-max-height: 80%;
-}
-.video-text-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.video-text{
-text-align: center;
-}
-.video-container{
-    width: 90%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-}
-.video{
-    width: 90%;
-    height: 100%;
-}
-/*
-.vysledok-container1, .vysledok-container3{
-display: flex;
-justify-content: center;
-align-items: start;
-}
-.vysledok-container2{
-display: flex;
-justify-content: center;
-align-items: end;
-}
-.vysledok1, .vysledok3{
-max-width: 90%;
-max-height: 80%;
-}
-.vysledok2{
-max-width: 90%;
-max-height: 100%;
-}
-*/
-.vysledok-container{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.vysledok{
-
-}
-.vysledok1, .vysledok2, .vysledok3{
-    width: 70%;
-    height: 100%;
-}
-.golden{
-    color: #b7985a;
-}
-
-.purple{
-    background-color: purple;
-}
-.pink{
-    background-color: plum;
-}
-.img1{
-    max-width: 80%;
-    max-height: 80%;
-    }
-.end-logo{
-    max-width: 15%;
-}
-.clickable:hover{
-    cursor: pointer;
-}
    </style>
   <body>
 
@@ -244,32 +57,34 @@ align-items: center;
      <!-- Navbar End -->
 
            <!-- Navbar -->
-    <nav class="navbar border-bottom navbar-expand-lg py-4" data-bs-theme="dark">
-     <div class="container-fluid">
-         <img src="images/grindset-logo-text.png" alt="Logo" class="d-inline-block align-text-top navbar-brand">
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-         <div class="navbar-nav">
-           <a class="nav-link active" aria-current="page" href="#">Home</a>
-           <a class="nav-link" href="#">Features</a>
-           <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Dropdown
-             </a>
-             <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="#">Action</a></li>
-               <li><a class="dropdown-item" href="#">Another action</a></li>
-               <li><a class="dropdown-item" href="#">Something else here</a></li>
-             </ul>
-           </li>
-           <button class="btn btn-outline-gold" type="button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScVzCq7ARFSscQACXhIhkE5M_Nx83m6GFQQzLTy76HOJosaWw/viewform?usp=sf_link'">Chcem Miesto</button>
-         </div>
-       </div>
-     </div>
-   </nav>
-    <!-- Navbar End -->
+           <nav class="navbar border-bottom navbar-expand-lg py-3" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/grindset-logo-text.png" alt="Bootstrap">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Features</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <button class="btn btn-outline-gold" type="button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScVzCq7ARFSscQACXhIhkE5M_Nx83m6GFQQzLTy76HOJosaWw/viewform?usp=sf_link'">Chcem Miesto</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+           <!-- Navbar End -->
 
     <div class="container p-10">
         <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 gap-10 my-custom-code gx-5">
