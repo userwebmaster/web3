@@ -1,1036 +1,188 @@
-
 *{
-    margin: 0px;
-    padding: 0px;
-    scrollbar-color: var(--golden);
-    background-size: cover;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-   }
-@font-face {
-    font-family: 'Lovelo';
-    src: url(fonts/Lovelo\ Black.otf);
+    justify-content: center;
+  }
+body{
+box-sizing: border-box;
+color: white;
+font-family: 'Lovelo';
+background-color: black;
 }
-mark{
-    background-color: var(--golden);
+@font-face {
+font-family: 'Lovelo';
+src: url(fonts/Lovelo\ Black.otf);
+}
+@media (min-width:992px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-brand{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        padding-left: 5%;
+        width: 25%;
+    }
+    .start-logo{
+        width: 35%;
+    }
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        width: 50%;
+        padding-top: 3%;
+    }
+}
+@media (max-width:992px){
+    .display-6{
+        font-size: 6cqi !important;
+    }
+    .fs-2{
+        font-size: 4cqi !important;
+    }
+    .fs-3{
+        font-size: 3.8cqi !important;
+    }
+    .fs-5{
+        font-size: 3cqi !important;
+    }
+    .fs-6{
+        font-size: 2.5cqi !important;
+    }
+    .fs-7{
+        font-size: 2cqi !important;
+    }
+    .btn-outline-gold{
+        font-size: 2.5cqi !important;
+        }
+    .p-10{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .display-none{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-brand{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: end;
+        padding-left: 5%;
+    }
+    .start-logo{
+        width: 35%;
+    }
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+
+.btn{
+    --bs-btn-padding-x: 0.9rem;
+    --bs-btn-padding-y: 0.6rem;
+}
+.btn-outline-gold{
+font-size: small;
+border-radius: 50px;
+border: 1.5px solid #b7985a;
+color: #b7985a;
+background-color: transparent;
+}
+.btn-outline-gold:hover{
+color: black;
+background-color: #b7985a;
 }
 :root{
 --golden: #b7985a;
---purple: #3D2760;
---lightpurple: #B192C1;
 }
-body{
-    padding: 0;
-    margin: 0;
-    height: 1442vh;
-    display: grid;  
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.09fr 0.93fr 0.5fr 2.8fr 0.8fr 1.7fr 1.7fr 1.6fr 0.8fr 2.5fr 0.8fr;
-    grid-template-areas: 
-    "header"
-    "video"
-    "obsah"
-    "vysledky1"
-    "ogrindsete"
-    "text1"
-    "text2"
-    "faq"
-    "porozmyslaj"
-    "vysledky2"
-    "footer";
-    background-color: black;
-    font-family: 'Lovelo';
-    color: white;
-}
-h1, h2, h3{
-    font-weight: normal;
-}
-h2{
-    font-size: 6cqi;
-    line-height: 300%;
-}
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
-    padding: 0% 4%;
-    grid-area: header;
-}
-.menu{
-    height: 75%;
-    width: 20%;
-    background-image: url(images/menu.png);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.logo-text{
-    height: 100%;
-    width: 50%;
-    background-image: url(images/grindset-logo-text.png);
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.menu-container{
-    bottom: 2%;
-    right: 4%;
-    left: 0 ;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: all .3s;
-}
-.collapsible0--expanded > .menu-container{
-    max-height: 100vh;
-    opacity: 1;
-}
-.blackness{
-    height: 100%;
-    width: 30%;
-    background-color: black;
-    opacity: 50%;
-}
- .menu-container nav {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: left;
-    height: 100%;
-    width: 70%;
-    gap: 6%;
-    padding: 10% 10%;
-    background-color: black;
-}
-.menu-container nav .x{
-    position: absolute;
-    margin-left: 55%;
-    width: 5%;
-    height: 2.5%;
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(images/x.png);
-}
-.menu-container .logo-text{
-    background-size: 80%;
-    background-position: center;
-    height: 6%;
-    width: 100%;
-}
-.menu-container .btn1{
-    padding: 5% 5%;
-    width: 100%;
-}
-nav a{
-    text-decoration: none;
-}
-nav p{
-    color: white;
-}
-nav p:hover{
-    color: var(--golden);
-}
-/*
-.vertical-line-container{
-    height: 100%;
-    padding-top: 3%;
-    width: 1%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.vertical-line{
-    opacity: 50%;
-    height: 70%;
-    width: 5%;
-    background-color: white;
-}
-*/
-#video{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    grid-area: video;
+.logo{
+max-width: 90%;
+max-height: 80%;
 }
 .video-text-container{
-    height: 100%;
-    width: 90%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;    
 }
-#video h1{
-    font-size: 8cqi;
-}
-.text{ 
-    text-align: center;
+.video-text{
+text-align: center;
 }
 .video-container{
     width: 90%;
-    height: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
 }
 .video{
-    width: 100%;
-    height: 100%;
-}
-#obsah{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    grid-area: obsah;
-}
-.obsah-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    height: 100%;
-    width: 80%;
-}
-#obsah .text-container{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    width: 100%;
-    height: 60%;
-}
-
-.line1{
-    font-size: 3cqi;
-    opacity: 70%;
-    line-height: 150%;
-}
-.gs{
-    color: var(--golden);
-}
-ul{
-    font-size: 4cqi;
-    padding-left: 5%;
-list-style-type: circle;
-}
-li{
-    margin-bottom: 8%;  
-    line-height: 120%;
-}
-button{
-    width: 40%;
-    border-radius: 100px;
-    border: solid 2px var(--golden); 
-    background-color: transparent;
-    font-family: 'Lovelo';
-    color: white;
-    padding: 4% 2%;
-    font-size: 3cqi;
-}
-button:hover{
-    cursor: pointer;
-    color: var(--golden);
-}
-
-
-#vysledky1{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    grid-area: vysledky1;
-}
-.vysledky-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2%;
-    width: 100%;
-    height: 100%;
-}
-.images-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    height: 88%;
-}
-.vysledky-image1, .vysledky-image2, .vysledky-image3{
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     width: 90%;
-    height: 33%;
-}
-.vysledky-image1{
-    background-image: url(images/vysledky-img1.png);
-}
-.vysledky-image2{
-    background-image: url(images/vysledky-img2.png);
-}
-.vysledky-image3{
-    background-image: url(images/vysledky-img3.png);
-}
-#ogrindsete{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: ogrindsete;
-}
-.ogrindsete-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    height: 90%;
-    width: 80%;
-    text-align: left;
-    gap: 5%;
-    line-height: 200%;
-}
-.ogrindsete-container h1 {
-    font-size: 6cqi;
-}
-#ogrindsete p {
-    font-size: 4cqi;
-}
-#text1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: text1;
-}
-.text1-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
-    width: 80%;
 }
-#text1 .text-container {
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: start;
-    gap: 1%;
+/*
+.vysledok-container1, .vysledok-container3{
+display: flex;
+justify-content: center;
+align-items: start;
 }
-#text1 .text-container h2{
-    line-height: normal;
+.vysledok-container2{
+display: flex;
+justify-content: center;
+align-items: end;
 }
-#text1 .text-container p{
-    font-size: 4cqi;
-    line-height: 150%;
+.vysledok1, .vysledok3{
+max-width: 90%;
+max-height: 80%;
 }
-.low-opacity{
-    opacity: 0.7;
+.vysledok2{
+max-width: 90%;
+max-height: 100%;
 }
-#text1 .image-container{
-    height: 40%;
-    width: 90%;
-    background-size: contain;
-    overflow: hidden;
-    background-image: url(images/text1-img.png);
-    box-sizing: border-box;
-    background-repeat: no-repeat;
+*/
+.vysledok-container{
+display: flex;
+justify-content: center;
+align-items: center;
 }
-#text2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: text2;   
+.vysledok{
+
 }
-.text2-container{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: start;
+.vysledok1, .vysledok2, .vysledok3{
+    width: 70%;
     height: 100%;
-    width: 80%;
 }
-#text2 .text-container {
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: start;
-    gap: 1%;
-}
-#text2 .text-container h2{
-    line-height: normal;
-}
-#text2 .text-container li{
-    font-size: 4cqi;
-    line-height: 150%;
-}
-#text2 .btn2{
-    height: 8%;
-}
-#text2 .image-container{
-    height: 40%;
-    width: 90%;
-    background-size: contain;
-    overflow: hidden;
-    background-image: url(images/text2-img.png);
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-}
-#text3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 5% 5%;
-    grid-area: text3;
-}
-#text3 .image-container{
-    background-image: url(images/text3-img.png);
+.golden{
+    color: #b7985a;
 }
 
-#faq{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-area: faq;
+.purple{
+    background-color: purple;
 }
-.faq-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 75%;
-    height: 90%;
-    gap: 2%;
+.pink{
+    background-color: plum;
 }
-#faq h2{
-    font-size: 6cqi;
-}
-.row-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    font-size: 4cqi;
-    gap: 4%;
-}
-.question{
-    width: 100%;
-    height: auto;
-    padding: 5% 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    background-image: linear-gradient(to bottom right, #b7985a, #544126);
-}
-#faq h2{    
-    line-height: normal;
-}
-#faq p{
-    font-size: 3cqi;
-    line-height: 150%;
-    color: black;
-}
-#faq h3{
-    color: white;
-    font-weight: normal;
-    margin-bottom: 2%;
-    font-size: 4cqi;
-}
-#porozmyslaj{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-area: porozmyslaj;
-}
-.porozmyslaj-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    width: 80%;
-}
-#porozmyslaj h2{
-    line-height: 150%;
-}
-#porozmyslaj p{
-    line-height: 150%;
-    font-size: 4cqi;
-}
-#porozmyslaj button{
-    width: 10%;
-    height: 150%;
-}
-#vysledky2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    grid-area: vysledky2;
-}
-#vysledky2 .vysledky-container{
-    height: 90%;
-}
-#vysledky2 .vysledky-image1{
-    background-size: 110%;
-    background-image: url(images/vysledky-img4.png);
-}
-#vysledky2 .vysledky-image2{
-    background-size: 110%;
-    background-image: url(images/vysledky-img5.png);
-}
-#vysledky2 .vysledky-image3{
-    background-size: 110%;
-    background-image: url(images/vysledky-img6.png);
-}
-#vysledky2 h2{
-    font-size: 6cqi;
-}
-#vysledky2 button{
-    height: 3%;
-    width: 30%;
-    text-align: center;
-    padding: 1% 1%;
-    margin: auto;
-    background-color: var(--golden);
-    color: black;
-}
-#vysledky2 button:hover{
-    background-color: transparent;
-    color: var(--golden);
-}
-footer{
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-}
-footer p{
-    font-size: 0.6rem;
-}
-footer .img{
-    width: 30%;
-    height: 50%;
-    background-image: url(images/grindset-logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.img1{
+    max-width: 80%;
+    max-height: 80%;
+    }
+.end-logo{
+    max-width: 15%;
 }
 .clickable:hover{
-    color: var(--golden);
     cursor: pointer;
-}
-.terms{
-    line-height: 200%;
-    padding: 5% 5%;
-    height: 600vh;
-    display: grid;  
-    grid-template-columns: 1fr;
-    grid-template-rows: 2.5fr 2.5fr 2.5fr;
-    grid-template-areas: 
-    "terms"
-    "privacy"
-    "disclaimer"
-}
-.domov-btn-container{
-    width: 100%;
-    height: 30%;
-    margin: 2%;
-}
-.domov-btn{
-    width: 8%;
-    height: 100%;
-}
-.disappear{
-    display: none;
-}
-@media (min-width: 768px) {
-    .disappear{
-        display: flex;
-    }
-    .computer-disappear{
-        display: none;
-    }
-    .menu{
-        opacity: 0;
-    }
-    *{
-        margin: 0px;
-        padding: 0px;
-        scrollbar-color: black;
-        background-size: cover;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-       }
-    @font-face {
-        font-family: 'Lovelo';
-        src: url(fonts/Lovelo\ Black.otf);
-    }
-    mark{
-        background-color: var(--golden);
-    }
-    :root{
-    --golden: #b7985a;
-    --purple: #3D2760;
-    --lightpurple: #B192C1;
-    }
-    body{
-        padding: 0px;
-        margin: 0px;
-        height: 925vh;
-        display: grid;  
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.12fr 0.88fr 1fr 1fr 0.5fr 1fr 1fr 1fr  /*1fr*/ 0.25fr 1fr 0.5fr;
-        grid-template-areas: 
-        "header"
-        "video"
-        "obsah"
-        "vysledky1"
-        "ogrindsete"
-        "text1"
-        "text2"
-        /*"text3"*/
-        "faq"
-        "porozmyslaj"
-        "vysledky2"
-        "footer";
-        background-color: black;
-        font-family: 'Lovelo';
-        color: white;
-    }
-    h1, h2, h3{
-        font-weight: normal;
-    }
-
-    header{
-        display: flex;
-        flex-direction: row;
-        align-items: top;
-        justify-content: left;
-        padding: 0% 10%;
-        gap: 2%;
-        grid-area: header;
-    }
-    .logo-text{
-        height: 100%;
-        width: 30%;
-        background-image: url(images/grindset-logo-text.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: right;
-    }
-    nav{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: right;
-        height: 100%;
-        width: 70%;
-        gap: 6%;
-        padding-top: 2%;
-    }
-    nav a{
-        text-decoration: none;
-    }
-    nav p{
-        color: white;
-    }
-    nav p:hover{
-        color: var(--golden);
-    }
-    .vertical-line-container{
-        height: 100%;
-        padding-top: 2%;
-        width: 1%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .vertical-line{
-        opacity: 50%;
-        height: 70%;
-        width: 5%;
-        background-color: white;
-    }
-    button{
-        border-radius: 100px;
-        border: solid 2px var(--golden); 
-        background-color: transparent;
-        font-family: 'Lovelo';
-        color: white;
-        margin-bottom: 5%;
-        font-size: 70%;
-    }
-    button:hover{
-        cursor: pointer;
-        color: var(--golden);
-    }
-    .btn1{
-        height: 40%;
-        width: 13%; 
-        margin-top: 4.5%;
-    }
-    #video{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        grid-area: video;
-        padding-top: 2%;
-    }
-    .horizontal-line{
-        opacity: 60%;
-        width: 100%;
-        height: 0.09%;
-        margin-bottom: 6%;
-        background-color: white;
-    }
-    .text{ 
-        text-align: center;
-        margin-bottom: 4%;
-    }
-    h1{
-        font-size: 350%;
-    }
-    .video-container{
-        width: 70%;
-        height: 70%;
-    }
-    .video{
-        width: 100%;
-        height: 100%;
-    }
-    #obsah{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 5% 5%;
-        grid-area: obsah;
-    }
-    .text-container{
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        width: 45%;
-        height: 100%;
-    }
-    .line1{
-        font-size: 120%;
-        opacity: 70%;
-        line-height: 300%;
-    }
-    .gs{
-        color: var(--golden);
-    }
-    h2{
-        font-size: 250%;
-        line-height: 300%;
-    }
-    ul{
-        font-size: 120%;
-        padding-left: 5%;
-    list-style-type: circle;
-    }
-    li{
-        margin-bottom: 8%;  
-        line-height: 120%;
-    }
-    
-    .image-container{
-        width: 45%;
-        height: 100%;
-        background-image: url(images/grindset-logo.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-    .btn2{
-        height: 6%;
-        width: 25%; 
-    }
-    #vysledky1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0% 5%;
-        padding-bottom: 5%;
-        grid-area: vysledky1;
-    }
-    .vysledky-container{
-        display: flex;
-        flex-direction: row;
-        align-items: start;
-        justify-content: space-between;
-        width: 100%;
-        height: 90%;
-    }
-    .vysledky-image1, .vysledky-image3{
-        width: 30%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        height: 90%;
-    }
-    .vysledky-image1{
-        background-image: url(images/vysledky-img1.png);
-    }
-    .vysledky-image3{
-        background-image: url(images/vysledky-img3.png);
-        width: 30%;
-        height: 90%;
-    }
-    .vysledky-image2{
-        width: 30%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        background-image: url(images/vysledky-img2.png);
-    }
-    .images-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    #ogrindsete{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        padding: 5% 15%;
-        text-align: center;
-        gap: 15%;
-        line-height: 200%;
-        grid-area: ogrindsete;
-    }
-    #ogrindsete p {
-        font-size: 150%;
-    }
-    #text1{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 5% 5%;
-        grid-area: text1;
-    }
-    #text1 .text-container {
-        width: 45%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        gap: 5%;
-        padding-top: 5%;
-    }
-    #text1 .text-container h2{
-        line-height: normal;
-    }
-    #text1 .text-container p{
-        font-size: 150%;
-        line-height: 150%;
-    }
-    .low-opacity{
-        opacity: 0.7;
-    }
-    #text1 .image-container{
-        width: 45%;
-        height: 100%;
-        background-size: 80%;
-        background-image: url(images/text1-img.png);
-    }
-    #text2{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 5% 5%;
-        grid-area: text2;
-    }
-    #text2 .text-container {
-        width: 45%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        gap: 5%;
-        padding-top: 5%;
-    }
-    #text2 .text-container li{
-        line-height: 180%;
-    }
-    #text2 .image-container{
-        width: 45%;
-        height: 100%;
-        background-size: 80%;
-        background-image: url(images/text2-img.png);
-    }
-    #text2 button{
-        height: 6%;
-        width: 20%;
-    }
-    #text3{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 5% 5%;
-        grid-area: text3;
-    }
-    #text3 .image-container{
-        background-image: url(images/text3-img.png);
-    }
-    
-    #faq{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5% 5%;
-        padding-bottom: 0%;
-        grid-area: faq;
-    }
-    .row-container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: end;
-        justify-content: space-between;
-    }
-    .row1, .row2{
-        width: 45%;
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        gap: 5%;
-    }
-    .question{
-        width: 100%;
-        height: 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: start;
-        gap: 10%;
-    }
-    #faq h2{
-        line-height: normal;
-    }
-    #faq p{
-        line-height: 150%;
-    }
-    #faq h3{
-        font-weight: normal;
-        font-size: 150%;
-    }
-    #porozmyslaj{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        text-align: center;
-        padding: 0% 5%;
-        padding-top: 5%;
-        grid-area: porozmyslaj;
-    }
-    #porozmyslaj h2{
-        line-height: 150%;
-    }
-    #porozmyslaj p{
-        line-height: 150%;
-    }
-    #porozmyslaj button{
-        width: 10%;
-        height: 150%;
-    }
-    #vysledky2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        grid-area: vysledky2;
-    }
-    #vysledky2 .vysledky-container{
-        height: 70%;
-    }
-    #vysledky2 button{
-        height: 6%;
-        width: 8%;
-        background-color: var(--golden);
-        color: black;
-    }
-    #vysledky2 button:hover{
-        background-color: transparent;
-        color: var(--golden);
-    }
-    footer{
-        grid-area: footer;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    footer p{
-        font-size: 90%;
-    }
-    footer .img{
-        width: 30%;
-        height: 50%;
-        background-image: url(images/grindset-logo.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-    .clickable:hover{
-        color: var(--golden);
-        cursor: pointer;
-    }
-    .terms{
-        line-height: 200%;
-        padding: 5% 5%;
-        height: 600vh;
-        display: grid;  
-        grid-template-columns: 1fr;
-        grid-template-rows: 2.5fr 2.5fr 2.5fr;
-        grid-template-areas: 
-        "terms"
-        "privacy"
-        "disclaimer"
-    }
-    .domov-btn-container{
-        width: 100%;
-        height: 30%;
-        margin: 2%;
-    }
-    .domov-btn{
-        width: 8%;
-        height: 100%;
-    }
 }
