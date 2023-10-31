@@ -18,8 +18,8 @@ src: url(fonts/Lovelo\ Black.otf);
         height: 100px;
         }
     .navbar{
-        padding-top: 1.8rem;
-        padding-bottom: 1.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
